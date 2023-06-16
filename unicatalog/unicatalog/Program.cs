@@ -21,7 +21,7 @@ namespace unicatalog
             
             //CreateTable(sqlite_conn);
             //InsertData(sqlite_conn);
-           // ReadData(sqlite_conn);
+            //ReadData(sqlite_conn);
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
@@ -35,7 +35,7 @@ namespace unicatalog
 
             SQLiteConnection sqlite_conn;
             // Create a new database connection:
-            sqlite_conn = new SQLiteConnection("Data Source=CATALOG1.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
          // Open the connection:
          try
             {
@@ -53,25 +53,45 @@ namespace unicatalog
         {
 
             SQLiteCommand sqlite_cmd;
-            string student = "CREATE TABLE STUDENT (ID INT,NUME VARCHAR(20), PRENUME VARCHAR(20), INITIALA VARCHAR(2), CNP INT, Col2 INT)";
-            string program_studiu = "CREATE TABLE PROGRAM_STUDIU (Col1 VARCHAR(20), Col2 INT)";
-            string catalog = "CREATE TABLE CATALOG (Col1 VARCHAR(20), Col2 VARCHAR(20), Col3 INT)";
-            string cicluri_invatare = "CREATE TABLE CICLURI_INVATARE (Col1 VARCHAR(20), Col2 VARCHAR(20), Col3 INT)";
-            string cont = "CREATE TABLE CONT (ID INT, NUME VARCHAR(20), PAROLA VARCHAR(20))";
-            string discipline = "CREATE TABLE DISCIPLINE (Col1 VARCHAR(20), Col2 VARCHAR(20), Col3 INT)";
-            string grupa = "CREATE TABLE GRUPA (Col1 VARCHAR(20), Col2 VARCHAR(20), Col3 INT)";
-            string note = "CREATE TABLE NOTE (Col1 VARCHAR(20), Col2 VARCHAR(20), Col3 INT)";
+            string student = "CREATE TABLE STUDENT (ID INT,NUME VARCHAR(20), PRENUME VARCHAR(20), INITIALA VARCHAR(2), CNP INT, CICLU VARCHAR(20),MEDIA INT,GRUPA VARCHAR(20))";
+            string program_studiu = "CREATE TABLE PROGRAM_STUDIU (ID INT, CICLU VARCHAR(20),DURATA INT, COD INT)";
+            string catalog = "CREATE TABLE CATALOG (MATRICOL INT, NUME VARCHAR(20), PRENUME VARCHAR(20),MED1 INT,MED2 INT, MED INT, PROMOVAT INT) ";
+            string cont = "CREATE TABLE CONT (ID INT, NUME VARCHAR(20), PAROLA VARCHAR(20), TIP INT)";
+            string discipline = "CREATE TABLE DISCIPLINE (ID INT, NUME VARCHAR(20), ACRONIM VARCHAR(20), CREDITE INT)";
+            string grupa = "CREATE TABLE GRUPA (ID INT, COD VARCHAR(20))";
+            string note = "CREATE TABLE NOTE (MATRICOL INT, MATERIE VARCHAR(20), NOTA INT)";
 
 
             sqlite_cmd = conn.CreateCommand();
+
+            sqlite_cmd.CommandText = "DROP TABLE STUDENT";
+           // sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_cmd.CommandText = "DROP TABLE PROGRAM_STUDIU";
+            //sqlite_cmd.ExecuteNonQuery();
+
+           // sqlite_cmd.CommandText = "DROP TABLE CONT";
+            //sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_cmd.CommandText = "DROP TABLE DISCIPLINE";
+            //sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_cmd.CommandText = "DROP TABLE GRUPA";
+            //sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_cmd.CommandText = "DROP TABLE CATALOG";
+            //sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_cmd.CommandText = "DROP TABLE NOTE";
+           // sqlite_cmd.ExecuteNonQuery();
+
+            
 
             sqlite_cmd.CommandText = student;
             sqlite_cmd.ExecuteNonQuery();
             sqlite_cmd.CommandText = program_studiu;
             sqlite_cmd.ExecuteNonQuery();
             sqlite_cmd.CommandText = catalog;
-            sqlite_cmd.ExecuteNonQuery();
-            sqlite_cmd.CommandText = cicluri_invatare;
             sqlite_cmd.ExecuteNonQuery();
             sqlite_cmd.CommandText = cont;
             sqlite_cmd.ExecuteNonQuery();

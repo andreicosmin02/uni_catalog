@@ -20,18 +20,21 @@ namespace unicatalog
             SQLiteDataReader sqlite_datareader;
             sqlite_conn.Open();
 
-            sqlite_cmd.CommandText = $"SELECT * FROM CONT WHERE NUME='{textBox1.Text}' AND PAROLA='{textBox2.Text}'";
+            sqlite_cmd.CommandText = $"SELECT * FROM CONT WHERE NUME='{username.Text}' AND PAROLA='{password.Text}'";
             sqlite_datareader = sqlite_cmd.ExecuteReader();
-            while (sqlite_datareader.Read())
+
+            if (sqlite_datareader.HasRows != false)
             {
-                string myreader = sqlite_datareader.GetString(1) + " " + sqlite_datareader.GetString(2);
-                Debug.WriteLine(myreader);
+                var form2 = new Form2();
+                form2.Show();
+                this.Visible = false;
+            }
+            else {
+                label_invalid.Visible = true; 
             }
             sqlite_conn.Close();
-            // Se deschide forms-ul cu content
-            var form2 = new Form2();
-            form2.Show();
-            this.Visible = false;
+
+
         }
 
         /// <summary>

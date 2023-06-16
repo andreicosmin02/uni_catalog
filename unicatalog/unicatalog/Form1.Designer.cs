@@ -4,7 +4,7 @@ namespace unicatalog
 {
     partial class form_autentificare
     {
-       
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -34,8 +34,8 @@ namespace unicatalog
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            username = new TextBox();
+            password = new TextBox();
             btn_signin = new Button();
             label_invalid = new Label();
             SuspendLayout();
@@ -72,22 +72,22 @@ namespace unicatalog
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(63, 110);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(298, 29);
-            textBox1.TabIndex = 3;
-            textBox1.KeyDown += Form1_KeyDown;
+            username.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            username.Location = new Point(63, 110);
+            username.Name = "textBox1";
+            username.Size = new Size(298, 29);
+            username.TabIndex = 3;
+            username.KeyDown += Form1_KeyDown;
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(63, 187);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(298, 29);
-            textBox2.TabIndex = 4;
-            textBox2.KeyDown += Form1_KeyDown;
+            password.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            password.Location = new Point(63, 187);
+            password.Name = "textBox2";
+            password.PasswordChar = '*';
+            password.Size = new Size(298, 29);
+            password.TabIndex = 4;
+            password.KeyDown += Form1_KeyDown;
             // 
             // btn_signin
             // 
@@ -113,6 +113,7 @@ namespace unicatalog
             label_invalid.Size = new Size(169, 15);
             label_invalid.TabIndex = 6;
             label_invalid.Text = "*Invalid username or password";
+            label_invalid.Visible = false;
             // 
             // form_autentificare
             // 
@@ -121,8 +122,8 @@ namespace unicatalog
             ClientSize = new Size(439, 354);
             Controls.Add(label_invalid);
             Controls.Add(btn_signin);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(password);
+            Controls.Add(username);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -145,8 +146,8 @@ namespace unicatalog
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox username;
+        private TextBox password;
         private Button btn_signin;
         private Label label_invalid;
     }
