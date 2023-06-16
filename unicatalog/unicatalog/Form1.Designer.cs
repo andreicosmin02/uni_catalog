@@ -1,7 +1,10 @@
-﻿namespace unicatalog
+﻿
+
+namespace unicatalog
 {
     partial class form_autentificare
     {
+       
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -28,113 +31,113 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btn_signin = new System.Windows.Forms.Button();
-            this.label_invalid = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            btn_signin = new Button();
+            label_invalid = new Label();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(71, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sign in to your account";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(71, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(282, 32);
+            label1.TabIndex = 0;
+            label1.Text = "Sign in to your account";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(63, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Username";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(63, 92);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Username";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(63, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(63, 169);
+            label3.Name = "label3";
+            label3.Size = new Size(57, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Password";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(63, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 29);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(63, 110);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(298, 29);
+            textBox1.TabIndex = 3;
+            textBox1.KeyDown += Form1_KeyDown;
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(63, 187);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(298, 29);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox2.Location = new Point(63, 187);
+            textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
+            textBox2.Size = new Size(298, 29);
+            textBox2.TabIndex = 4;
+            textBox2.KeyDown += Form1_KeyDown;
             // 
             // btn_signin
             // 
-            this.btn_signin.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_signin.FlatAppearance.BorderSize = 0;
-            this.btn_signin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_signin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_signin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_signin.Location = new System.Drawing.Point(63, 270);
-            this.btn_signin.Name = "btn_signin";
-            this.btn_signin.Size = new System.Drawing.Size(298, 32);
-            this.btn_signin.TabIndex = 5;
-            this.btn_signin.Text = "Sign in";
-            this.btn_signin.UseVisualStyleBackColor = false;
-            this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
+            btn_signin.BackColor = SystemColors.MenuHighlight;
+            btn_signin.FlatAppearance.BorderSize = 0;
+            btn_signin.FlatStyle = FlatStyle.Popup;
+            btn_signin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_signin.ForeColor = SystemColors.ControlLightLight;
+            btn_signin.Location = new Point(63, 270);
+            btn_signin.Name = "btn_signin";
+            btn_signin.Size = new Size(298, 32);
+            btn_signin.TabIndex = 5;
+            btn_signin.Text = "Sign in";
+            btn_signin.UseVisualStyleBackColor = false;
+            btn_signin.Click += btn_signin_Click;
             // 
             // label_invalid
             // 
-            this.label_invalid.AutoSize = true;
-            this.label_invalid.ForeColor = System.Drawing.Color.Red;
-            this.label_invalid.Location = new System.Drawing.Point(126, 237);
-            this.label_invalid.Name = "label_invalid";
-            this.label_invalid.Size = new System.Drawing.Size(169, 15);
-            this.label_invalid.TabIndex = 6;
-            this.label_invalid.Text = "*Invalid username or password";
+            label_invalid.AutoSize = true;
+            label_invalid.ForeColor = Color.Red;
+            label_invalid.Location = new Point(126, 237);
+            label_invalid.Name = "label_invalid";
+            label_invalid.Size = new Size(169, 15);
+            label_invalid.TabIndex = 6;
+            label_invalid.Text = "*Invalid username or password";
             // 
             // form_autentificare
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 354);
-            this.Controls.Add(this.label_invalid);
-            this.Controls.Add(this.btn_signin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "form_autentificare";
-            this.Opacity = 0.98D;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Autentificare";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(439, 354);
+            Controls.Add(label_invalid);
+            Controls.Add(btn_signin);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = SystemColors.ControlText;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "form_autentificare";
+            Opacity = 0.98D;
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Autentificare";
+            Load += form_autentificare_Load;
+            KeyDown += Form1_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

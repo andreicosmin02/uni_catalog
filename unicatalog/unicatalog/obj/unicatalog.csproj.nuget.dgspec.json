@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {}
+    "C:\\Users\\nicul\\source\\repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {
+    "C:\\Users\\nicul\\source\\repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "projectUniqueName": "C:\\Users\\nicul\\source\\repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
         "projectName": "unicatalog",
-        "projectPath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "projectPath": "C:\\Users\\nicul\\source\\repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
         "packagesPath": "C:\\Users\\nicul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\obj\\",
+        "outputPath": "C:\\Users\\nicul\\source\\repos\\uni_catalogBun\\unicatalog\\unicatalog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicul\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,33 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
             "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.7, )"
             },
             "SQLite": {
               "target": "Package",
               "version": "[3.13.0, )"
+            },
+            "ServiceStack.OrmLite.SqlServer": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             },
             "System.Data.SQLite.Core": {
               "target": "Package",

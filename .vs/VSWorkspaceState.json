@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\unicatalog",
+    "\\unicatalog\\unicatalog"
   ],
-  "SelectedNode": "\\unicatalog.sln",
+  "SelectedNode": "\\unicatalog\\unicatalog\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
