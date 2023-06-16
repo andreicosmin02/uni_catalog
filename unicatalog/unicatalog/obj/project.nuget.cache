@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "3dnLWsdofPRX1lkrW7/QAadSLCWoYmRr19meDXOQtpCH1A+lQ70KQ15/1wRCkyBvgcRQ/0hYj/mrKM/SoFJXsg==",
+  "dgSpecHash": "1EZWA8X+0rKyOZZRIIs/nYSTX5SwDQM4YAnBlWOaV3YrRExg8J/CnU6gDbrIDKSwtUmAK+QHPDIEql/AubhJkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\unicatalog.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicul\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.7\\microsoft.data.sqlite.core.7.0.7.nupkg.sha512",
+    "C:\\Users\\nicul\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\nicul\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
+    "C:\\Users\\nicul\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\nicul\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "C:\\Users\\nicul\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

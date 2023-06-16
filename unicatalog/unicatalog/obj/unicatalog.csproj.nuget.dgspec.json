@@ -1,33 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\unicatalog.csproj": {}
+    "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\unicatalog.csproj": {
+    "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "projectUniqueName": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
         "projectName": "unicatalog",
-        "projectPath": "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\unicatalog.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Desktop\\facultate\\sem2\\proiect poo\\unicatalog\\unicatalog\\obj\\",
+        "projectPath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "packagesPath": "C:\\Users\\nicul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalogBun\\unicatalog\\unicatalog\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Users\\andre\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nicul\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -44,6 +39,20 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

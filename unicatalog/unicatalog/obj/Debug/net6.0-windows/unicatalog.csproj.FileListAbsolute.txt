@@ -16,3 +16,33 @@ C:\Users\andre\Desktop\facultate\sem2\proiect poo\unicatalog\unicatalog\obj\Debu
 C:\Users\andre\Desktop\facultate\sem2\proiect poo\unicatalog\unicatalog\obj\Debug\net6.0-windows\ref\unicatalog.dll
 C:\Users\andre\Desktop\facultate\sem2\proiect poo\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.form_autentificare.resources
 C:\Users\andre\Desktop\facultate\sem2\proiect poo\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.Form2.resources
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\unicatalog.exe
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\unicatalog.deps.json
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\unicatalog.runtimeconfig.json
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\unicatalog.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\unicatalog.pdb
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.csproj.AssemblyReference.cache
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.form_autentificare.resources
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.Form2.resources
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.csproj.GenerateResource.cache
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.AssemblyInfoInputs.cache
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.AssemblyInfo.cs
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.csproj.CoreCompileInputs.cache
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\refint\unicatalog.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.pdb
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.genruntimeconfig.cache
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\ref\unicatalog.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\SQLitePCLRaw.core.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.csproj.CopyComplete
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\nicul\Source\Repos\uni_catalogBun\unicatalog\unicatalog\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
