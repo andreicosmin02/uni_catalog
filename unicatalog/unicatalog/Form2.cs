@@ -85,5 +85,29 @@ namespace unicatalog
             panel_cadru_didactic.Visible = true;
             panel_student.Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var service = new Service.Service();
+
+            service.deleteProfesor(deleteCadru.Text);
+        }
+
+        private void sterger_Stud_Click(object sender, EventArgs e)
+        {
+            var service = new Service.Service();
+
+            service.deleteStudent(deleteStudent.Text);
+        }
+
+        private void Form_studenti_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_studenti_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
