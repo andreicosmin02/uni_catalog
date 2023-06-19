@@ -25,7 +25,7 @@ namespace unicatalog
 
             if (sqlite_datareader.HasRows != false)
             {
-                var form2 = new Form2();
+                var form2 = new Form_studenti();
                 form2.Show();
                 this.Visible = false;
             }
