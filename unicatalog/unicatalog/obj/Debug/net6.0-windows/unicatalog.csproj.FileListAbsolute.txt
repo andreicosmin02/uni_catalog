@@ -268,3 +268,4 @@ D:\anu2 sem 2\Poo\uniCatalog\unicatalog\unicatalog\obj\Debug\net6.0-windows\unic
 D:\anu2 sem 2\Poo\uniCatalog\unicatalog\unicatalog\obj\Debug\net6.0-windows\ref\unicatalog.dll
 D:\anu2 sem 2\Poo\uniCatalog\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.ProfesorForm.resources
 >>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
+C:\Users\nicul\source\repos\uni_catalog2\unicatalog\unicatalog\obj\Debug\net6.0-windows\unicatalog.ProfesorForm.resources
