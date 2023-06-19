@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Diagnostics;
+using static unicatalog.Service.Service;
 namespace unicatalog
 {
     internal static class Program
@@ -21,7 +22,7 @@ namespace unicatalog
             
             //CreateTable(sqlite_conn);
             //InsertData(sqlite_conn);
-            //ReadData(sqlite_conn);
+            ReadData(sqlite_conn);
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
@@ -57,35 +58,37 @@ namespace unicatalog
             string program_studiu = "CREATE TABLE PROGRAM_STUDIU (ID INT, CICLU VARCHAR(20),DURATA INT, COD INT)";
             string catalog = "CREATE TABLE CATALOG (MATRICOL INT, NUME VARCHAR(20), PRENUME VARCHAR(20),MED1 INT,MED2 INT, MED INT, PROMOVAT INT) ";
             string cont = "CREATE TABLE CONT (ID INT, NUME VARCHAR(20), PAROLA VARCHAR(20), TIP INT)";
-            string discipline = "CREATE TABLE DISCIPLINE (ID INT, NUME VARCHAR(20), ACRONIM VARCHAR(20), CREDITE INT)";
+            string discipline = "CREATE TABLE DISCIPLINE (ID INT, NUME VARCHAR(20), ACRONIM VARCHAR(20), CREDITE INT, PROFESOR VARCHAR(20));";
             string grupa = "CREATE TABLE GRUPA (ID INT, COD VARCHAR(20))";
             string note = "CREATE TABLE NOTE (MATRICOL INT, MATERIE VARCHAR(20), NOTA INT)";
-
+            string profesor = "CREATE TABLE PROFESOR (ID INT, NUME VARCHAR(20))";
 
             sqlite_cmd = conn.CreateCommand();
 
             sqlite_cmd.CommandText = "DROP TABLE STUDENT";
-           // sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.ExecuteNonQuery();
 
             sqlite_cmd.CommandText = "DROP TABLE PROGRAM_STUDIU";
-            //sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.ExecuteNonQuery();
 
-           // sqlite_cmd.CommandText = "DROP TABLE CONT";
-            //sqlite_cmd.ExecuteNonQuery();
+             sqlite_cmd.CommandText = "DROP TABLE CONT";
+             sqlite_cmd.ExecuteNonQuery();
 
             sqlite_cmd.CommandText = "DROP TABLE DISCIPLINE";
-            //sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.ExecuteNonQuery();
 
             sqlite_cmd.CommandText = "DROP TABLE GRUPA";
-            //sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.ExecuteNonQuery();
 
             sqlite_cmd.CommandText = "DROP TABLE CATALOG";
-            //sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.ExecuteNonQuery();
 
             sqlite_cmd.CommandText = "DROP TABLE NOTE";
-           // sqlite_cmd.ExecuteNonQuery();
-
+            sqlite_cmd.ExecuteNonQuery();
             
+            sqlite_cmd.CommandText = "DROP TABLE PROFESOR";
+            //sqlite_cmd.ExecuteNonQuery();
+
 
             sqlite_cmd.CommandText = student;
             sqlite_cmd.ExecuteNonQuery();
@@ -100,6 +103,8 @@ namespace unicatalog
             sqlite_cmd.CommandText = grupa;
             sqlite_cmd.ExecuteNonQuery();
             sqlite_cmd.CommandText = note;
+            sqlite_cmd.ExecuteNonQuery();
+            sqlite_cmd.CommandText = profesor;
             sqlite_cmd.ExecuteNonQuery();
         }
 
@@ -134,6 +139,12 @@ namespace unicatalog
                 string myreader = sqlite_datareader.GetString(1);
                 Debug.WriteLine(myreader);
             }
+
+            var service = new Service.Service();
+
+            service.addProfesor("coman");
+            service.deleteProfesor("coman");
+
             conn.Close();
         }
     }
