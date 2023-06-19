@@ -11,12 +11,12 @@ namespace unicatalog.Service
     {
         SQLiteConnection sqlite_conn;
         
-        void addStudent(string nume,string prenume,string initiala, int cnp, string ciclu, int media, string grupa)
+        public void addStudent(string nume,string prenume,string initiala, int cnp, string ciclu, int media, string grupa)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
 
-            string query = $"INSERT INTO STUDENT (NUME, PRENUME, INITIALA, CNP, CICLU, MEDIA, GRUPA) VALUES(1, 'MIHAI') VALUES ('{nume}','{prenume}','{initiala}',{cnp},'{ciclu}',{media},'{grupa}'); ";
+            string query = $"INSERT INTO STUDENT (ID, NUME, PRENUME, INITIALA, CNP, CICLU, MEDIA, GRUPA) VALUES (1,'{nume}','{prenume}','{initiala}',{cnp},'{ciclu}',{media},'{grupa}');";
             SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
 
             sqlite_cmd.CommandText = query;
@@ -26,7 +26,7 @@ namespace unicatalog.Service
             
         }
 
-        void addProgramStudiu(string ciclu,int durata, int cod)
+        public void addProgramStudiu(string ciclu,int durata, int cod)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True;");
             sqlite_conn.Open();
@@ -40,7 +40,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addCatalog(int matricol,string nume,string prenume, int med1,int med2, int med, int promovat)
+        public void addCatalog(int matricol,string nume,string prenume, int med1,int med2, int med, int promovat)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -54,7 +54,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addCont(string nume,string parola, int tip)
+        public void addCont(string nume,string parola, int tip)
         {
 
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
@@ -69,7 +69,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addDiscipline(string nume,string acronim,int credite)
+        public void addDiscipline(string nume,string acronim,int credite)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -83,7 +83,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addGrupa(string cod)
+        public void addGrupa(string cod)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -97,7 +97,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addNote(int matricol,string materie,int nota)
+        public  void addNote(int matricol,string materie,int nota)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
