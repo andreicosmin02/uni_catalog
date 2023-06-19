@@ -131,12 +131,12 @@ namespace unicatalog
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT * FROM CONT";
+            sqlite_cmd.CommandText = "SELECT NUME, PAROLA FROM CONT";
             
             sqlite_datareader = sqlite_cmd.ExecuteReader();
             while (sqlite_datareader.Read())
             {
-                string myreader = sqlite_datareader.GetString(1);
+                string myreader = sqlite_datareader.GetString(1)+ " " + sqlite_datareader.GetString(0);
                 Debug.WriteLine(myreader);
             }
 
