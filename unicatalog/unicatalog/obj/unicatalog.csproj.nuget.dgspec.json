@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\nicul\\source\\repos\\uni_catalog2\\unicatalog\\unicatalog\\unicatalog.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\nicul\\source\\repos\\uni_catalog2\\unicatalog\\unicatalog\\unicatalog.csproj",
         "packagesPath": "C:\\Users\\nicul\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nicul\\Source\\Repos\\uni_catalog2\\unicatalog\\unicatalog\\obj\\",
+=======
+    "D:\\anu2 sem 2\\Poo\\uniCatalog\\unicatalog\\unicatalog\\unicatalog.csproj": {}
+  },
+  "projects": {
+    "D:\\anu2 sem 2\\Poo\\uniCatalog\\unicatalog\\unicatalog\\unicatalog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\anu2 sem 2\\Poo\\uniCatalog\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "projectName": "unicatalog",
+        "projectPath": "D:\\anu2 sem 2\\Poo\\uniCatalog\\unicatalog\\unicatalog\\unicatalog.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\anu2 sem 2\\Poo\\uniCatalog\\unicatalog\\unicatalog\\obj\\",
+>>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\nicul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +111,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+>>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
         }
       }
     }
