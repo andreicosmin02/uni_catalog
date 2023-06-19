@@ -11,12 +11,16 @@ namespace unicatalog.Service
     {
         SQLiteConnection sqlite_conn;
         
-        void addStudent(string nume,string prenume,string initiala, int cnp, string ciclu, int media, string grupa)
+        public void addStudent(string nume,string prenume,string initiala, int cnp, string ciclu, int media, string grupa)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
 
-            string query = $"INSERT INTO STUDENT (NUME, PRENUME, INITIALA, CNP, CICLU, MEDIA, GRUPA) VALUES(1, 'MIHAI') VALUES ('{nume}','{prenume}','{initiala}',{cnp},'{ciclu}',{media},'{grupa}'); ";
+<<<<<<< HEAD
+            string query = $"INSERT INTO STUDENT (ID, NUME, PRENUME, INITIALA, CNP, CICLU, MEDIA, GRUPA) VALUES (1,'{nume}','{prenume}','{initiala}',{cnp},'{ciclu}',{media},'{grupa}');";
+=======
+            string query = $"INSERT INTO STUDENT (NUME, PRENUME, INITIALA, CNP, CICLU, MEDIA, GRUPA) VALUES ('{nume}','{prenume}','{initiala}',{cnp},'{ciclu}',{media},'{grupa}'); ";
+>>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
             SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
 
             sqlite_cmd.CommandText = query;
@@ -26,7 +30,7 @@ namespace unicatalog.Service
             
         }
 
-        void addProgramStudiu(string ciclu,int durata, int cod)
+        public void addProgramStudiu(string ciclu,int durata, int cod)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True;");
             sqlite_conn.Open();
@@ -40,7 +44,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addCatalog(int matricol,string nume,string prenume, int med1,int med2, int med, int promovat)
+        public void addCatalog(int matricol,string nume,string prenume, int med1,int med2, int med, int promovat)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -54,7 +58,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addCont(string nume,string parola, int tip)
+        public void addCont(string nume,string parola, int tip)
         {
 
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
@@ -69,7 +73,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addDiscipline(string nume,string acronim,int credite)
+        public void addDiscipline(string nume,string acronim,int credite)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -83,7 +87,7 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addGrupa(string cod)
+        public void addGrupa(string cod)
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
@@ -97,12 +101,58 @@ namespace unicatalog.Service
             sqlite_conn.Close();
         }
 
-        void addNote(int matricol,string materie,int nota)
+<<<<<<< HEAD
+        public  void addNote(int matricol,string materie,int nota)
+=======
+        public void addNote(int matricol,string materie,int nota)
+>>>>>>> 7e3394fdc8fe9306ae5e3bf5069547e6b2b86e26
         {
             sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
             sqlite_conn.Open();
 
             string query = $"INSERT INTO NOTE(MATRICOL,MATERIE,NOTA) VALUES({matricol},'{materie}',{nota});";
+            SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
+
+            sqlite_cmd.CommandText = query;
+            sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_conn.Close();
+        }
+
+        public void addProfesor(string nume)
+        {
+            sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn.Open();
+
+            string query = $"INSERT INTO PROFESOR(NUME) VALUES('{nume}');";
+            SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
+
+            sqlite_cmd.CommandText = query;
+            sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_conn.Close();
+        }
+
+        public void deleteStudent(String name)
+        {
+            sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn.Open();
+
+            string query = $"DELETE FROM STUDENT WHERE NAME= '{name}';";
+            SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
+
+            sqlite_cmd.CommandText = query;
+            sqlite_cmd.ExecuteNonQuery();
+
+            sqlite_conn.Close();
+        }
+
+        public void deleteProfesor(string name)
+        {
+            sqlite_conn = new SQLiteConnection("Data Source=CATALOG.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn.Open();
+
+            string query = $"DELETE FROM PROFESOR WHERE NUME = '{name}';";
             SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand();
 
             sqlite_cmd.CommandText = query;
